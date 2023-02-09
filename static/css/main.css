@@ -10,11 +10,11 @@
     
 }
 
-#race-table tr:nth-child(odd):nth-child(-n+21){
+#race-table tr:nth-child(odd){
     background: lightyellow;
 }
 
-#race-table tr:nth-child(even):nth-child(-n+21){
+#race-table tr:nth-child(even){
     background: lightgreen;
 }
 /* 
