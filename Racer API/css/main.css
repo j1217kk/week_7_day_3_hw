@@ -1,0 +1,41 @@
+#race-table{
+    border: solid 1px;
+    text-align: center;
+}
+
+#race-table th {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,16,186,0.7917367630646008) 11%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    
+}
+
+#race-table tr:nth-child(odd):nth-child(-n+21){
+    background: lightyellow;
+}
+
+#race-table tr:nth-child(even):nth-child(-n+21){
+    background: lightgreen;
+}
+/* 
+#race-table tr:nth-child(n + 22){
+    visibility:hidden;
+} */
+
+.clear {
+    padding:20px;
+    text-align: center;
+}
+
+#top {
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+}

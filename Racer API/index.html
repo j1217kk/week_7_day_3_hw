@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Racer API</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <p id="title">RACER API</p>
+    </div>
+    <div class="container" id ="top">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <form name="inputData" id="input-data">
+                    <label for="season" >Season: </label>
+                    <input typ="text" name="season" id = "season">
+
+                    <label for="round">Round: </label>
+                    <input typ="text" name="round" id="round">
+
+                    <button type="submit" id="submit-button">Get Standings!</button>
+                </form>
+            </div>
+        </div>
+        <div class="clear"><button class="col-2 btn btn-danger mx-3" onclick="clear_data()">Clear Data</button></div>
+        <div class="container">
+            <div class="row">
+                <table class="racer-list" id="race-table">
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
