@@ -10,9 +10,38 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/main.js" defer></script>
 <title>Racer API</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="../static/css/main.css">
 </head>
 <body>
+    <div class="container">
+        <nav class="ct-nav">
+            <div>
+            <!-- </div>
+            <div> -->
+                <ul class="col-12 col-md-12" id="horizontal-list">
+                    <img src="../static/images/f-1.png" alt="car-logo" id="car-logo">
+                    <a href="index.html">
+                        <li>Racer API</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Roster Creation</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Logout</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Sign Up</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Sign In</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div class="container">
         <p id="title">RACER API</p>
     </div>
@@ -20,17 +49,17 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <form name="inputData" id="input-data">
-                    <label for="season" >Season: </label>
-                    <input typ="text" name="season" id = "season">
+                    <label for="season"><b>Season: </b></label>
+                    <input type="text" name="season" id = "season" class="info">
 
-                    <label for="round">Round: </label>
-                    <input typ="text" name="round" id="round">
+                    <label for="round"id = "round-text"><b>Round: </b></label>
+                    <input type="text" name="round" id="round" class="info">
 
                     <button type="submit" id="submit-button">Get Standings!</button>
                 </form>
             </div>
         </div>
-        <div class="clear"><button class="col-2 btn btn-danger mx-3" onclick="clear_data()">Clear Data</button></div>
+        <div class="clear"><button class="col-2 btn btn-danger mx-3" id="clear-button" onclick="clear_data()">Clear Data</button></div>
         <div class="container">
             <div class="row">
                 <table class="racer-list" id="race-table">

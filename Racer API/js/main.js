@@ -46,7 +46,6 @@ form.addEventListener('submit', async (event) => {
     let query_season = document.querySelector('#season')
     let query_round = document.querySelector('#round')
     const x = await getData(query_season.value, query_round.value)
-    console.log(x)
     const y = x.MRData.StandingsTable.StandingsLists[0].DriverStandings
     const html = `<tr>
     <th>Position</th>
